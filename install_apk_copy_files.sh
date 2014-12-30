@@ -6,7 +6,6 @@ FILESDIR=$MYDIR/12_files
 
 cd $APKDIR
 APK_LIST=`find -name "*.apk"`
-echo $APK_LIST
 adb wait-for-device
 for apk in $APK_LIST;
 do
